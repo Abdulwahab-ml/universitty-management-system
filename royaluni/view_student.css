@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #11a6cb, #d2e622); /* Linear gradient background */
+    color: #fff; /* Default text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 2cm;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+strong {
+    color: #ffcc00; /* Accent color for labels */
+}
+
+/* Section Container */
+.details-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9); /* Light, semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Left Side (Text Details) */
+.details-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.details-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    position: relative;
+    left: 500px;
+    bottom: 400px;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+/* Link Styling */
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .details-container {
+        padding: 15px;
+    }
+
+    .details-left {
+        padding-right: 0;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .details-container {
+        padding: 10px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
