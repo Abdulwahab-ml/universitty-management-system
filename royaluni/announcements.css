@@ -1,0 +1,148 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling with New Background Gradient */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #2e88c5, #8e44ad); /* New Gradient */
+    color: #333;
+}
+
+/* Heading Styling */
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Announcement List */
+ul {
+    list-style: none;
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul li {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title of each announcement */
+h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Content of each announcement */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Small text for "Posted by" information */
+small {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Back to Dashboard Button */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+
+/* For tablets and below */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    ul li {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    a {
+        font-size: 1.1em;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    ul li {
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
