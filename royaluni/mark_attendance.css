@@ -1,0 +1,132 @@
+/* General Styles for the Body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2e88c5, #8e44ad); /* Consistent gradient from blue to purple */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Style */
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.2em;
+    margin-top: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Success Message */
+p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #a32a2a; /* Red for emphasis */
+}
+
+/* Style for the Courses Section */
+h3 {
+    color: #f39c12; /* Yellow for section headings */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the Form and Table */
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White background for forms */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #193953; /* Dark blue background for headers */
+    color: white;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* Select Dropdown */
+select {
+    padding: 8px;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Button Styles */
+button {
+    display: block;
+    width: 100%;
+    background-color: #3498db; /* Light blue button */
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #2980b9; /* Darker blue for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    select {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
