@@ -1,0 +1,203 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2e88c5, #8e44ad); /* Blue-to-purple gradient */
+    color: #333;
+}
+
+/* Main Title Styling */
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Titles */
+h3 {
+    text-align: center;
+    font-size: 2em;
+    color: #ffcc00; /* Golden yellow for section headings */
+    margin: 20px 0;
+}
+
+/* Back to Dashboard Button */
+a {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* Blue-to-pink gradient */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: linear-gradient(to right, #FC5C7D, #6A82FB); /* Reverse gradient on hover */
+    transform: translateY(-2px);
+}
+
+/* Form Styling */
+form {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #34495e;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+/* Submit Button */
+button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to right, #3498db, #2980b9); /* Blue gradient button */
+    color: #fff;
+    padding: 12px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2980b9, #3498db);
+    transform: scale(1.05);
+}
+
+/* Success and Error Messages */
+div {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+div[style*="color: green"] {
+    background-color: #d4edda;
+    color: #28a745;
+}
+
+div[style*="color: red"] {
+    background-color: #f8d7da;
+    color: #e74c3c;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #193953; /* Dark blue */
+    color: #fff;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Unassign Button */
+.unassign-course {
+    background: linear-gradient(to right, #e74c3c, #c0392b); /* Red gradient */
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.unassign-course:hover {
+    background: linear-gradient(to right, #c0392b, #e74c3c);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    button, .unassign-course {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    button, .unassign-course {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
