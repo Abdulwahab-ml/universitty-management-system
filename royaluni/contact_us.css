@@ -1,0 +1,176 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2e88c5, #8e44ad); /* Blue-to-purple gradient */
+    color: #333; /* Dark gray for text */
+}
+
+/* Main Heading Styling */
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff; /* White heading text */
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Text shadow for elegance */
+}
+
+/* Success and Error Messages */
+p.success, p.error {
+    text-align: center;
+    padding: 12px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+p.success {
+    background-color: #d4edda; /* Light green */
+    color: #28a745; /* Green text */
+}
+
+p.error {
+    background-color: #f8d7da; /* Light red */
+    color: #e74c3c; /* Red text */
+}
+
+/* Form Styling */
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    background: #fff; /* White form background */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #2c3e50; /* Dark gray text */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box; /* Ensure padding doesn't add extra width */
+}
+
+textarea {
+    resize: none; /* Disable textarea resizing */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #3498db; /* Blue border on focus */
+    outline: none;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+}
+
+/* Submit Button */
+button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to right, #3498db, #2980b9); /* Blue gradient */
+    color: #fff;
+    padding: 12px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2980b9, #3498db);
+    transform: scale(1.05);
+}
+
+/* Back Button Styling */
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* Gradient: Blue to Pink */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.back-button a:hover {
+    background: linear-gradient(to right, #FC5C7D, #6A82FB); /* Reverse Gradient */
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    input,
+    textarea {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    .back-button a {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.8em;
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    input,
+    textarea {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .back-button a {
+        font-size: 0.9em;
+        padding: 8px 14px;
+    }
+}
