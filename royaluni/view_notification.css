@@ -1,0 +1,182 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2e88c5, #8e44ad); /* Gradient Background */
+    color: #333;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Headings */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #ffcc00; /* Golden yellow */
+    margin: 20px 0;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #193953; /* Dark Blue Header */
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+/* Status-Specific Row Highlighting */
+tr.pending {
+    background-color: #fef7e0; /* Light yellow for pending */
+}
+
+tr.completed {
+    background-color: #e2fbe4; /* Light green for completed */
+}
+
+/* Form Styling Inside Table */
+form {
+    margin: 0;
+}
+
+select {
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    background-color: #ecf0f1;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #fff;
+}
+
+select:hover {
+    background-color: #dfe6e9;
+}
+
+/* Back to Admin Dashboard Button */
+form button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* Gradient Button */
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #FC5C7D, #6A82FB); /* Reverse Gradient */
+    transform: scale(1.05);
+}
+
+/* Success and Error Messages */
+p[style*="color: red"] {
+    color: #e74c3c;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+div.success {
+    color: #28a745;
+    background-color: #d4edda;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    form button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    select {
+        font-size: 0.9em;
+        padding: 4px;
+    }
+
+    form button {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}
