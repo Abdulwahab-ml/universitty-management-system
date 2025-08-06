@@ -1,0 +1,222 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #2e88c5, #8e44ad); /* Gradient background */
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 1.1em;
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Navigation Styling */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 1.2em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Login/Signup Button Styling */
+.login-signup {
+    text-align: right;
+    margin: 20px 40px;
+}
+
+.login-signup a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 1.2em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.login-signup a:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.4em;
+    color: #ffcc00;
+}
+
+/* Main Container Styling */
+.container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2e88c5;
+}
+
+.container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.container ul {
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.container ul li {
+    margin: 12px 0;
+    font-size: 1.2em;
+}
+
+.container ul li::before {
+    content: "✓ ";
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 1.1em;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+
+/* For tablets and below */
+@media screen and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    .hero p {
+        font-size: 1.3em;
+    }
+
+    .container h2 {
+        font-size: 1.8em;
+    }
+
+    .container ul li {
+        font-size: 1.1em;
+    }
+
+    .login-signup a,
+    nav a {
+        font-size: 1em;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.4em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .container h2 {
+        font-size: 1.6em;
+    }
+
+    .container ul li {
+        font-size: 1.1em;
+    }
+
+    .login-signup a,
+    nav a {
+        font-size: 1.1em;
+    }
+}
+
+/* For very small screens (e.g., phones in portrait mode) */
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .container h2 {
+        font-size: 1.4em;
+    }
+
+    .container ul li {
+        font-size: 1em;
+    }
+
+    .login-signup a,
+    nav a {
+        font-size: 1em;
+    }
+}
