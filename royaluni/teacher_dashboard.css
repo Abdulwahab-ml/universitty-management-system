@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2e88c5, #8e44ad); /* Gradient background */
+    color: #fff;
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for style */
+}
+
+/* Dashboard Links */
+.dashboard-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.dashboard-links a {
+    display: block;
+    margin: 15px 0;
+    padding: 12px 25px;
+    text-decoration: none;
+    background-color: #3498db; /* Button background color */
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+.dashboard-links a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Logout Link */
+.logout {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #e74c3c; /* Red color for logout */
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+
+/* For tablets and below */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2.6em;
+    }
+
+    .dashboard-links a {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .logout {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.4em;
+    }
+
+    .dashboard-links a {
+        font-size: 0.95em;
+        padding: 8px 15px;
+        width: 200px;
+    }
+
+    .logout {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+/* For very small screens */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .dashboard-links a {
+        font-size: 0.9em;
+        padding: 7px 14px;
+        width: 180px;
+    }
+
+    .logout {
+        font-size: 0.9em;
+        padding: 7px 14px;
+    }
+}
