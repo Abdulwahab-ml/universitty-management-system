@@ -1,0 +1,226 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2e88c5, #8e44ad); /* Blue-to-purple gradient */
+    margin: 0;
+    padding: 0;
+    color: #2c3e50; /* Dark gray for text */
+}
+
+/* Main Title Styling */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Headings */
+h2, h3 {
+    text-align: center;
+    font-size: 2em;
+    color: #ffcc00; /* Golden yellow headings */
+    margin: 20px 0;
+}
+
+/* Back to Dashboard Button */
+a {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* Gradient: Blue to Pink */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: linear-gradient(to right, #FC5C7D, #6A82FB); /* Reverse Gradient */
+    transform: translateY(-2px);
+}
+
+/* Dashboard Action Buttons */
+.action-button {
+    display: inline-block;
+    margin: 15px 10px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-button.blue {
+    background: linear-gradient(to right, #3498db, #2980b9); /* Blue Gradient */
+}
+
+.action-button.blue:hover {
+    background: linear-gradient(to right, #2980b9, #3498db);
+    transform: scale(1.05);
+}
+
+.action-button.red {
+    background: linear-gradient(to right, #e74c3c, #c0392b); /* Red Gradient */
+}
+
+.action-button.red:hover {
+    background: linear-gradient(to right, #c0392b, #e74c3c);
+    transform: scale(1.05);
+}
+
+/* Form Styling */
+form {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7;
+    font-size: 1em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: #fff;
+    padding: 12px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2980b9, #3498db);
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+th {
+    background-color: #193953; /* Dark blue for headers */
+    color: #fff;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #f9f9f9; /* Light gray for cells */
+    color: #333;
+}
+
+/* Status-Specific Row Highlights */
+tr.pending {
+    background-color: #fef7e0; /* Light yellow for pending */
+}
+
+tr.completed {
+    background-color: #e2fbe4; /* Light green for completed */
+}
+
+/* Success and Error Messages */
+div.message {
+    text-align: center;
+    margin: 20px auto;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 90%;
+    max-width: 500px;
+}
+
+div.message.success {
+    background-color: #d4edda;
+    color: #28a745;
+}
+
+div.message.error {
+    background-color: #f8d7da;
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2, h3 {
+        font-size: 1.8em;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    button, .action-button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2, h3 {
+        font-size: 1.6em;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    button, .action-button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
