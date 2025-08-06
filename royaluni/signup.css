@@ -1,0 +1,195 @@
+/* Reset and general styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body background, color, and layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a1b9a, #f50057); /* Purple to pink gradient */
+            color: #333;
+            text-align: center;
+            padding: 50px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Fade-in animation for body */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            font-size: 2em;
+            color: white;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        /* Slide-up animation for h2 */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Form container styling */
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: left;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 1s;
+        }
+
+        /* Form label styling */
+        label {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        /* Input field styling */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #f50057; /* Pink focus border */
+            outline: none;
+        }
+
+        /* Submit button styling */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6a1b9a;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #f50057; /* Lighter pink on hover */
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        /* Footer and links styling */
+        footer {
+            margin-top: 30px;
+            color: white;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffeb3b; /* Yellow color on hover */
+        }
+
+        /* Additional Sections */
+        p {
+            color: #fff;
+            font-size: 1.1em;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 2s;
+        }
+
+        /* Links */
+        a {
+            color: #ffffff;
+            font-size: 1.1em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffeb3b; /* Yellow color on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.8em;
+            }
+
+            form {
+                width: 90%;
+                padding: 20px;
+            }
+
+            button {
+                font-size: 1.1em;
+            }
+
+            footer {
+                font-size: 0.8em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.6em;
+            }
+
+            form {
+                width: 100%;
+                padding: 15px;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            footer {
+                font-size: 0.75em;
+            }
+
+            a {
+                font-size: 1em;
+            }
+        }
