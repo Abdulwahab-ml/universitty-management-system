@@ -1,0 +1,147 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2e88c5, #8e44ad);
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+h2, h3 {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: 0 auto 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+form label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background: linear-gradient(to right, #8e44ad, #6a11cb);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    transform: scale(1.05);
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table th {
+    background: #8e44ad;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Attendance Highlight */
+table td.attendance-low {
+    color: red;
+    font-weight: bold;
+}
+
+table td.attendance-high {
+    color: green;
+    font-weight: bold;
+}
+
+/* Back to Dashboard Button */
+a {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, #2e88c5, #8e44ad);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    button, a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
